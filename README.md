@@ -70,18 +70,18 @@ for (NSUInteger i; i < collection.count; i++) {
 Because a `for-in` loop doesn't depend on a counter to access the collection by index, it can be used to iterate over *unordered* collections such as dictionaries (`NSDictionary` and `NSMutableDictionary`), or ordered collections when the order isn't significant to the operation.
 
 ```objc
-NSMutableArray *usernames = @[ @"jmburges", @"tim_the_enchanter", @"tomalley", @"jimmysee" ];
+NSMutableArray *usernames = [ @[ @"jmburges", @"tim_the_enchanter", @"tomalley", @"jimmysee" ] mutableCopy];
 NSString *requestedUsername = @"markedwardmurray";
 BOOL uniqueUsername = YES;
-
+    
 for (NSString *anyUsername in usernames) {
     if ([requestedUsername isEqualToString:anyUsername]) {
         uniqueUsername = NO;
     }
 }
-
-if (uniqueUsername} {
-    [usernames addObject:currentUsername];
+    
+if (uniqueUsername) {
+    [usernames addObject:requestedUsername];
     NSLog(@"Added username: %@", requestedUsername);
 }
 ```
