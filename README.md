@@ -17,7 +17,7 @@ Interacting with the data held in collections often involves implementing loops.
 
 ### Review: The `for` Loop
 
-The `for` loop is the most commonly-used kind of loop in Objective-C. 
+The `for` loop is the most commonly-used kind of loop in Objective-C and uses the following declaration syntax:
 
 ```objc
 for (initialization; condition; increment) {
@@ -57,6 +57,8 @@ for (Class *object in collection) {
     statements
 }
 ```
+**Note:** `Class` *is placeholder notation for the type of object held in the collection. In the upcoming example, you'll see this set as* `NSString` *because the relevant collection contains string variables.*
+
 This is equivalent to declaring a `for` loop in the following manner, but without needing to use the counter in the implementation beyond the initial accessing of the index:
 
 ```objc
@@ -121,7 +123,7 @@ eek = [eek stringByAppendingString:@"k!"];
 
 NSLog(@"%@", eek);
 ```
-This will print: `eeeeeeeeeek!` with ten `e`s. We can change the length of our "eek" but altering the integer in the loop's conditional statement.
+This will print: `eeeeeeeeeek!` with ten `e`s. We can change the length of our "eek" by altering the integer in the loop's conditional statement.
 
 If say, we have a simple dice game that allows a player to total their die rolls up until they roll a one, we can use a `do-while` loop that contains the first die roll.
 
