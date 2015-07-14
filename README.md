@@ -132,7 +132,7 @@ NSUInteger dieRoll = 0;
 NSUInteger rollTotal = 0;
 
 do {
-    dieRoll = 1 + arc4random() % 6;
+    dieRoll = 1 + arc4random_uniform(6);
     rollTotal += dieRoll;
         
     NSLog(@"Rolled a %lu", dieRoll);
