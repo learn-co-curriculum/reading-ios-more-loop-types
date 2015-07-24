@@ -46,7 +46,7 @@ NSLog(@"%@", grammarQuirk);
 ```
 This will print: `Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo.`.
 
-But what if we have a collection whose contents we want to use in the same way each time. Do we really need the counter? Or, what if we have a collection that isn't an array: can we still iterate over it? Yes, we can. Enter, the `for-in` loop.
+But what if we have a collection whose contents we want to use in the same way each time? Do we really need the counter? Or, what if we have a collection that isn't an array: can we still iterate over it? Yes, we can. Enter, the `for-in` loop.
 
 ## Fast Enumeration: The `for-in` Loop
 
