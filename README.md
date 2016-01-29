@@ -160,4 +160,4 @@ Total Score: 9
 
 
 
-<a href='https://learn.co/lessons/reading-ios-more-loop-types' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/reading-ios-more-loop-types' title='More Loop Types'>More Loop Types</a> on Learn.co and start learning to code for free.</p>
